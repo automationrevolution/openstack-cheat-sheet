@@ -7,27 +7,7 @@
 
 | Service  | Command |
 | --- | --- |
-| **Compute (Nova)** |
-|   | `openstack server create --flavor <flavor> --image <image> --nic net-id=<network_id> <instance_name>` |
-|   | `openstack server delete <instance_id>` |
-|   | `openstack server show <server_name>` |
-|   | `openstack server list --all-projects` |
-|   | `openstack server start <server_name>` |
-|   | `openstack server stop <server_name>` |
-|   | `openstack server pause <server_name>` |
-|   | `openstack server unpause <server_name>` |
-|   | `openstack server reboot <server_name>` |
-|   | `openstack server resize <server_name> <new_flavor>` |
-| **Image (Glance)** |
-|   | `openstack image list` |
-|   | `openstack image create --file <image_file> --disk-format qcow2 --container-format bare --public <image_name>` |
-|   | `openstack image show <image_id>` |
-|   | `openstack image delete <image_id>` |
-|   | `openstack image save <image_id> --file <filename>` |
-|   | `openstack image set <image_id>
-| Service | Command | Description |
-| --- | --- | --- |
-| **Compute (Nova)** |
+|| **Compute (Nova)** |
 | | `openstack server create --flavor <flavor> --image <image> --nic net-id=<network_id> <instance_name>` | Create a new server instance |
 | | `openstack server delete <instance_id>` | Delete a server instance |
 | | `openstack server show <server_name>` | Show server details |
@@ -76,8 +56,6 @@
 | | `openstack image member add <image_id> <project_id>` | Add an image member |
 | | `openstack image member remove <image_id> <project_id>` | Remove an image member |
 | | `openstack image member list <image_id>` | List all image members |
-| Service | Command | Description |
-| --- | --- | --- |
 | **Networking (Neutron)** |
 | | `openstack network list` | List all networks |
 | | `openstack network create <network_name>` | Create a new network |
@@ -118,21 +96,6 @@
 | | `openstack volume backup create --name <backup_name> <volume_id>` | Create a new volume backup |
 | | `openstack volume backup show <backup_id>` | Show volume backup details |
 | | `openstack volume backup delete <backup_id>` | Delete a volume backup |
-| | `openstack volume type list` | List all volume types |
-| | `openstack volume type create <type_name>` | Create a new volume type |
-| | `openstack volume type delete <type_id>` | Delete a volume type |
-| | `openstack volume type set <type_id> --property <key=value>` | Set volume type properties |
-| | `openstack volume type unset <type_id> --property <key>` | Unset volume type properties |
-| | `openstack volume qos associate <qos_policy> <volume_type>` | Associate a QoS policy with a volume type |
-| | `openstack volume qos disassociate <qos_policy> <volume_type>` | Disassociate a QoS policy from a volume type |
-| | `openstack volume qos list` | List all QoS policies |
-| | `openstack volume qos create <qos_name>` | Create a new QoS policy |
-| | `openstack volume qos delete <qos_id>` | Delete a QoS policy |
-| | `openstack volume qos set <qos_id> --property <key=value>` | Set QoS policy properties |
-| | `openstack volume qos unset <qos_id> --property <key>` | Unset QoS policy properties |
-|| Service | Command | Description |
-| --- | --- | --- |
-| **Block Storage (Cinder)** |
 | | `openstack volume type list` | List all volume types |
 | | `openstack volume type create <type_name>` | Create a new volume type |
 | | `openstack volume type delete <type_id>` | Delete a volume type |
