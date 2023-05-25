@@ -7,7 +7,7 @@
 
 | Service  | Command |
 | --- | --- |
-|| **Compute (Nova)** |
+| **Compute (Nova)** |
 | | `openstack server create --flavor <flavor> --image <image> --nic net-id=<network_id> <instance_name>` | Create a new server instance |
 | | `openstack server delete <instance_id>` | Delete a server instance |
 | | `openstack server show <server_name>` | Show server details |
